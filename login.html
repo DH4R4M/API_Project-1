@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    <link rel="stylesheet" href="css/login.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <title>login</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"> <img src="https://logosarchive.com/wp-content/uploads/2021/12/Myntra-icon-logo.svg"
+                    alt="" /></a>
+        </div>
+
+        <nav>
+            <ul>
+                <a href="product.html">
+                    <li style="color: red">MEN</li>
+                </a>
+                <li>WOMEN</li>
+                <li>KIDS</li>
+                <li>HOME LIVING</li>
+                <li>STUDIO</li>
+            </ul>
+        </nav>
+
+        <div class="input-container">
+            <input type="text" class="header-input" placeholder="Search for products, brands and more" />
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+
+        <div class="actions">
+
+            <a href="signup.html" class="profile">
+                <span class="user"><i class="fa-solid fa-user"></i></span>
+                <span class="pname">Profie</span>
+            </a>
+
+            <a href="" class="wishlist">
+                <span class="wish-icon"><i class="fa-regular fa-heart"></i></span>
+                <span class="utitle">Wishlist</span>
+            </a>
+
+            <a href="cart.html" class="chkout">
+                <span class="bag"><i class="fa-solid fa-bag-shopping"></i></span>
+                <span class="uname">Bag</span>
+            </a>
+        </div>
+    </header>
+
+    <div class="main">
+
+        <div class="auth">
+            <img src="https://assets.myntassets.com/assets/images/2023/10/30/b7eb4f88-4a93-4b68-beac-982d29be81671698648116564-Flat_500--1-.jpg"
+                alt="" style="width: 100%; user-select: none;">
+            <div class="topgap">
+                <div class="authHeader">Login to your account</div>
+
+                <form action="" id="login">
+                    <input class="sameInput" type="email" id="email" placeholder="Email" required>
+
+                    <input class="sameInput" type="password" id="pass" placeholder="Password" required>
+
+                    <div class="tc">
+                        By continuing, I agree to the
+                        <a href="https://www.myntra.com/termsofuse" target="_blank" rel="noopener">Terms of Use</a> &
+                        <a href="https://www.myntra.com/privacypolicy" target="_blank" rel="noopener">Privacy Policy</a>
+                    </div>
+
+                    <button class="loginBtn" type="submit">LOGIN</button>
+
+                </form>
+                <p id="message"></p>
+
+                <span class="acd">Don't Have Account? <a href="signup.html" style="color: red;">Click Me!</a></span>
+
+            </div>
+
+        </div>
+
+        <script src="scripts/login.js"></script>
+</body>
+
+</html>

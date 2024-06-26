@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/cart.css">
+
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <div id="logo">
+            <a href="index.html"> <img src="https://logosarchive.com/wp-content/uploads/2021/12/Myntra-icon-logo.svg"
+                    alt="" /></a>
+        </div>
+
+        <nav>
+            <ul>
+                <a href="product.html">
+                    <li style="color: red">MEN</li>
+                </a>
+                <li>WOMEN</li>
+                <li>KIDS</li>
+                <li>HOME LIVING</li>
+                <li>STUDIO</li>
+            </ul>
+        </nav>
+
+        <div class="input-container">
+            <input type="text" class="header-input" placeholder="Search for products, brands and more" />
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+
+        <div class="actions">
+
+            <a href="signup.html" class="profile">
+                <span class="user"><i class="fa-solid fa-user"></i></span>
+                <span class="pname">Profie</span>
+            </a>
+
+            <a href="" class="wishlist">
+                <span class="wish-icon"><i class="fa-regular fa-heart"></i></span>
+                <span class="utitle">Wishlist</span>
+            </a>
+
+            <a href="cart.html" class="chkout">
+                <span class="bag"><i class="fa-solid fa-bag-shopping"></i></span>
+                <span class="uname">Bag</span>
+                <span class="item-count" id="itemCount" style="margin-left: 16px;"></span>
+            </a>
+
+        </div>
+    </header>
+    <!-- 00 -->
+
+    <!--  -->
+    <div class="con_ord">
+        <div class="container" id="data">
+
+        </div>
+
+        <div class="orderbox">
+
+            <div class="cart-container">
+                <h1>Your Shopping Bag</h1>
+                <div id="cart-items"></div>
+                <div id="total-amount"></div>
+            </div>
+
+            <div class="pricedets">PRICE DETAILS</div>
+            <div class="total">
+                <span>Total MRP</span><span class="totalprice" id="maintotal"></span>
+            </div>
+            <div class="discount">
+                <span>Discount on MRP</span><span class="filldiscount" id="dissco"></span>
+            </div>
+
+            <div class="amount">
+                <span>Total Amount</span><span class="amount_pay" id="total"></span>
+            </div>
+            <p>Enter Promo Code </p>
+            <div class="promocode">
+
+                <input type="text" id="promo" placeholder="MYNTRA300">
+                <div class="apply">Apply</div>
+            </div>
+            <a href="index.html">
+                <div class="makeorder">PLACE ORDER</div>
+            </a>
+        </div>
+    </div>
+
+    <!--  -->
+
+
+    <script src="scripts/cart.js"></script>
+</body>
+
+</html>

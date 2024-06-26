@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    <link rel="stylesheet" href="css/signup.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <title>signup</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"> <img src="https://logosarchive.com/wp-content/uploads/2021/12/Myntra-icon-logo.svg"
+                    alt="" /></a>
+        </div>
+
+        <nav>
+            <ul>
+                <a href="product.html">
+                    <li style="color: red">MEN</li>
+                </a>
+                <li>WOMEN</li>
+                <li>KIDS</li>
+                <li>HOME LIVING</li>
+                <li>STUDIO</li>
+            </ul>
+        </nav>
+
+        <div class="input-container">
+            <input type="text" class="header-input" placeholder="Search for products, brands and more" />
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+
+        <div class="actions">
+
+            <a href="signup.html" class="profile">
+                <span class="user"><i class="fa-solid fa-user"></i></span>
+                <span class="pname">Profie</span>
+            </a>
+
+            <a href="" class="wishlist">
+                <span class="wish-icon"><i class="fa-regular fa-heart"></i></span>
+                <span class="utitle">Wishlist</span>
+            </a>
+
+            <a href="cart.html" class="chkout">
+                <span class="bag"><i class="fa-solid fa-bag-shopping"></i></span>
+                <span class="uname">Bag</span>
+            </a>
+        </div>
+    </header>
+
+    <!--///////////////////////-->
+
+    <div class="main">
+
+        <div class="auth">
+            <div class="topgap">
+                <div class="authHeader">Signup or create your account</div>
+
+                <form action="" id="signup">
+                    <input type="email" id="email" placeholder="Email" required>
+
+                    <input type="password" id="pass" placeholder="Password" required>
+
+                    <button class="loginBtn" type="submit">SIGNUP</button>
+
+                </form>
+
+
+                <p id="message"></p>
+
+                <span class="acd">Already Account? <a href="login.html">Click Me!</a></span>
+
+            </div>
+
+        </div>
+
+        <script src="scripts/signup.js"></script>
+</body>
+
+</html>
